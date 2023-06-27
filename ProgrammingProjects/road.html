@@ -12,17 +12,26 @@
 
 <body>
 
+<!-- Navbar Components-->
 <div class="navbar">
 	<a href="index.html">Home</a>
 	<!-- <a href="sql.html">SQL</a> -->
 	<div class="dropdown">
-		<button class="dropbtn">GUI
+		<button class="dropbtn">Web Apps
 			<i class="fa fa-caret-down"></i>
 		</button>
 		<div class="dropdown-content">
-			<a href="todolist.html">To Do List (JavaFX)</a>
-			<!-- <a href="matchinggame.html">Super Matching Game (Java)</a>
-			<a href="wguproject.html">WGU C++ Project</a> -->
+			<a href="matching-game/index.html">Matching Game: U.S. Presidents</a>
+			<a href="pig-game/index.html">Pig Game</a>
+		</div>
+	</div>
+	<div class="dropdown">
+		<button class="dropbtn">Web
+			<i class="fa fa-caret-down"></i>
+		</button>
+		<div class="dropdown-content">
+			<a href="history.html">Revolution Quiz</a>
+			<a href="art.html">Art Gallery</a>
 		</div>
 	</div>
 	<div class="dropdown">
@@ -36,12 +45,13 @@
 		</div>
 	</div>
 	<div class="dropdown">
-		<button class="dropbtn">Web
+		<button class="dropbtn">GUI
 			<i class="fa fa-caret-down"></i>
 		</button>
 		<div class="dropdown-content">
-			<a href="history.html">Revolution Quiz</a>
-			<a href="art.html">Art Gallery</a>
+			<a href="todolist.html">To Do List (JavaFX)</a>
+			<!-- <a href="matchinggame.html">Super Matching Game (Java)</a>
+			<a href="wguproject.html">WGU C++ Project</a> -->
 		</div>
 	</div>
 </div>
@@ -50,12 +60,13 @@
 <h1>New Road Cost Estimator</h1>
 <h2>C++ Console Output</h2>
 </header>
-</br>
 
 <h3>Roads Needed!</h3>
+
 <img class="percent" alt="Road" src="image/RoadWeb.png">
+
 <p>
-Imagine if your great uncle Ernie left you an inheritance of 16,000 acres of woodlands! Would you build a cabin? Or, would build a 
+Imagine if your great uncle Ernie left you an inheritance 16,000 acres of woodlands! Would you build a cabin? Or, would build a 
 new neighborhood of homes? Either way, you're going to need a road to access what you decide to build. In addition, if there are
 any rivers or bayous to cross, then you'll also need a bridge.  
 </p>
@@ -108,12 +119,12 @@ charges a fixed cost of $5,000 for any bridge project and then an additional amo
 		<td>$1,100</td>
 	</tr>
 </table>
-
+<img class="percent" alt="River Width" src="image/widthRiver.png">
 </p>
 </br>
   
 <h3>The Width of a River</h3>
-<img class="percent" alt="River Width" src="image/widthRiver.png">
+
 <p>
 Let's say your little plot of land has a wide river going right through it. You will need to calculate the distance across the river. 
 Countryside Roads has a method for doing this easily. You must first measure the distance between two points on one side of the river. 
@@ -126,13 +137,12 @@ distance across the river with these measurements.
 <h3>Writing the code</h3>
 
 <p>
-With these costs and measurements in place, Countryside Roads can now estimate the costs of building your road. Countryside Roads would probably 
-want a computer program that calculates these costs for them. This can easily be done in C++. While the width of the river sounds a little complex, 
-it was actually quite simple. It took me only one line of code with the help of trigonometry. Figuring out how to code what to charge for the 
-different lengths of roads or bridges was a little more lengthy, but still not difficult. I used if-else statements to determine which variable 
-cost to use. When calculating distances, I declared variables using the double type, and for expenses I used long double just incase any very long 
-numbers were needed. I also added another useful calculation; the total distance of roads and bridges built. Lastly, of course, I used cout to print 
-to the console and cin to get input form the user. 
+With these costs and measurements methods in place, Countryside Roads would probably want a computer program that calculates these costs for them. This can easily 
+be done in C++. While the width of the river sounds a little complex, it was actually quite simple. It took me only one line of code with the 
+help of trigonometry. Figuring out how to code what to charge for the different lengths of roads or bridges was a little more lengthy, but still 
+not difficult. I used if-else statements to determine which variable cost to use. When calculating distances, I declared variables using the 
+double type, and for expenses I used long double just incase any very long numbers were needed. I also added another useful calculation; the 
+total distance of roads and bridges built. Lastly, of course, I used cout to print to the console and cin to get input form the user. 
 </p>
 </br>
 
@@ -156,7 +166,7 @@ Enter the number of miles the road will cover on land: </br>
 4</br>
 The cost to build your roads on land will be 9.001 million dollars.</br>
 The total cost of your building projects will be 10.2633 million dollars.</br>
-The total distance of the planned road and bridge is 4.21648 miles!
+The total distance of the planned road and bridge 4.21648 miles!
 </p>
 </br>
 
@@ -242,7 +252,7 @@ int main() {
     totalRoadDist = (landDist + widthRiverMi); // Calculate the total distance of the bridge and road.
     
     // Tell the user how many miles the total project will cover.
-    cout << "The total distance of the planned road and bridge is " << totalRoadDist << " miles!" << endl;
+    cout << "The total distance of the planned road and bridge " << totalRoadDist << " miles!" << endl;
     
     return 0;
 }

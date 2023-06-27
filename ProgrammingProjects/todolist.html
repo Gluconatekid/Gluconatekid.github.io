@@ -12,17 +12,26 @@
 
 <body>
 
+<!-- Navbar Components-->
 <div class="navbar">
 	<a href="index.html">Home</a>
 	<!-- <a href="sql.html">SQL</a> -->
 	<div class="dropdown">
-		<button class="dropbtn">GUI
+		<button class="dropbtn">Web Apps
 			<i class="fa fa-caret-down"></i>
 		</button>
 		<div class="dropdown-content">
-			<a href="todolist.html">To Do List (JavaFX)</a>
-			<!-- <a href="matchinggame.html">Super Matching Game (Java)</a>
-			<a href="wguproject.html">WGU C++ Project</a> -->
+			<a href="matching-game/index.html">Matching Game: U.S. Presidents</a>
+			<a href="pig-game/index.html">Pig Game</a>
+		</div>
+	</div>
+	<div class="dropdown">
+		<button class="dropbtn">Web
+			<i class="fa fa-caret-down"></i>
+		</button>
+		<div class="dropdown-content">
+			<a href="history.html">Revolution Quiz</a>
+			<a href="art.html">Art Gallery</a>
 		</div>
 	</div>
 	<div class="dropdown">
@@ -36,12 +45,13 @@
 		</div>
 	</div>
 	<div class="dropdown">
-		<button class="dropbtn">Web
+		<button class="dropbtn">GUI
 			<i class="fa fa-caret-down"></i>
 		</button>
 		<div class="dropdown-content">
-			<a href="history.html">Revolution Quiz</a>
-			<a href="art.html">Art Gallery</a>
+			<a href="todolist.html">To Do List (JavaFX)</a>
+			<!-- <a href="matchinggame.html">Super Matching Game (Java)</a>
+			<a href="wguproject.html">WGU C++ Project</a> -->
 		</div>
 	</div>
 </div>
@@ -50,61 +60,49 @@
 <h1>To Do List</h1>
 <h2>Using JavaFX</h2>
 </header>
-</br>
 	
 <article>
 <h3>Who Has Time for That?</h3>
-<p>"How do you stay so organized?" Your friend Richard asks. </br> You answer: "I created my to do list app." </br> Richard laughs. 
-"What a waste of time! Who has time to make a to do list app anyway?"
-</p></br>
+<p class="article">"How do you stay so organized?" Your friend Richard asks. </br> You answer: "I created my to do list app." </br> Richard laughs. "Who has time to make a to do list app?"
+</p>
 
 <h3>Done Completely in Code</h3>
 
-<p>
-I learned a good deal doing this project due to the fact that I made this application using code only. In order to better understand the JavaFX code, 
-I studied dozens of tutorials on JavaFX and as well as one of Oracle's detailed books on Java. That made it possible for me to actually think up my 
-own project and write the code. I custom designed this very simple to do list app with SMART goals in mind. I called the application Task Tracker 1.0 
-(You can see this title at the top of the window pane). In the rest of this page, I have included images and explanations of how Task Tracker 1.0 works. 
-The entire code for this project is included in a scrolling text box at the bottom of this page.  
-</p></br>
+<p class="article">
+I learned a good deal doing this project due to the fact that I made this application using code only. In order to better understand the JavaFX code, I studied dozens of tutorials on JavaFX and as well as a one of Oracle's detailed books on Java. That made it possible for me to actually think up my own project and write the code. I custom designed this very simple to do list app with SMART goals in mind. I called the application Task Tracker 1.0 (You can see this title at the top of the window pane). In the rest of this page, I have included images and explanations of how Task Tracker 1.0 works. The entire code is included in a scrolling text box as well.  
+</p>
 
 <h3>Visual Layout</h3>
-<p class="article">I used the NetBeans IDE 8.2 to run and test this project. I named both the project and the public class JavaFXDoGood. JavaFXDoGood starts 
-with 22 imports to access libraries and uses a primary stage that contains one scene. Within the scene, the VBox component contains the other layout components 
-including a menu bar, a label, a table with six columns, and a horizontal row at the bottom. The horizontal row contains six text fields, and an add button. 
-When JavaFXDoGood is run, the stage looks like this: 
+<p class="article">I used the NetBeans IDE 8.2 to run and test Task Tracker 1.0. I named the public class JavaFXDoGood. JavaFXDoGood starts with 22 imports to access libraries and uses a primary stage that contains one scene. Within the scene, the VBox component contains the other layout components including a menu bar, a label, a table with six columns, and a horizontal row at the bottom. The horizontal row contains six text fields, and an add button. When JavaFXDoGood is run, the stage looks like this: 
 </p>
 <img class="todo" alt="Running My To Do List App" src="image/firstOpened_toDoList.png"><br/>
 </br>
 
 <h3>Editable Table</h3>
-<p class="article">While the two example tasks are helpful in modeling how you could detail your tasks, the user will want to erase or change them. With a double-click, 
-the text can be edited or erased. This feature was added by calling the setEditable() control. In order to keep the text you enter, you must press enter.   
+<p class="article">While the two example tasks are helpful in modeling how you could detail your tasks, the user will want to erase or change them. With a double-click, the text can be edited or erased. In order to keep the text you enter, you must press enter. This feature was added by calling the setEditable() control.   
 </p>
 <img class="todo" alt="Running My To Do List App" src="image/EditableTable.png"><br/>
 </br>
 
 <h3>Add Rows</h3>
-<p class="article">To add a task, simply enter the desired text in the text field boxes at the bottom and press the "Add" button. In order for the table to accept 
-the text, each column uses setters and getters along with an action event and an event handler to access the information from the text fields. 
+<p class="article">To add a task, simply enter the desired text in the text field boxes at the bottom and press the "Add" button. In order for the table to accept the text, each column uses setters and getters along with an action event and an event handler to access the information from the text fields. 
 </p>
 <img class="todo" alt="Running My To Do List App" src="image/AddRows_TextFields.png"><br/>
 </br>
 
 <h3>File Menu</h3>
-<p class="article">The menu bar has a file menu, which includes (as is seen below) the ability to access the open, save as, and print dialogue windows. This 
-functionality is enabled by the fileChooser class, which is called by an EventHandler for each action.  
+<p class="article">The menu bar has a file menu, which includes (as is seen below) the ability to access the open, save as, and print dialogue windows. This functionality is enabled by the fileChooser class, which is called in an EventHandler for each action.  
 </p>
 <img class="todo" alt="Running My To Do List App" src="image/FileMenu.png"><br/>
 </br>
 
 <h3>Open and Save As</h3>
-<p class="article">In order to access the open and save as dialogue windows, I added a private class for both that gets the dialogue window and opens it to the desktop.
+<p class="article">In order for the open and save as dialogue windows to open, I added getters in a private class for both open and save as. 
 </p>
 <img class="todo" alt="Running My To Do List App" src="image/SaveAsWindow.png"><br/>
 </br>
 
-<h3>Code for This Project</h3>
+<h3>Code for the To Do List</h3>
 <p class="article">
 The project JavaFXDoGood (below), includes comments that explain what each block of code does. These comments come after double forward-slashes. // 
 </p>

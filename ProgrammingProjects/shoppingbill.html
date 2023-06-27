@@ -12,17 +12,26 @@
 
 <body>
 
+<!-- Navbar Components-->
 <div class="navbar">
 	<a href="index.html">Home</a>
 	<!-- <a href="sql.html">SQL</a> -->
 	<div class="dropdown">
-		<button class="dropbtn">GUI
+		<button class="dropbtn">Web Apps
 			<i class="fa fa-caret-down"></i>
 		</button>
 		<div class="dropdown-content">
-			<a href="todolist.html">To Do List (JavaFX)</a>
-			<!-- <a href="matchinggame.html">Super Matching Game (Java)</a>
-			<a href="wguproject.html">WGU C++ Project</a> -->
+			<a href="matching-game/index.html">Matching Game: U.S. Presidents</a>
+			<a href="pig-game/index.html">Pig Game</a>
+		</div>
+	</div>
+	<div class="dropdown">
+		<button class="dropbtn">Web
+			<i class="fa fa-caret-down"></i>
+		</button>
+		<div class="dropdown-content">
+			<a href="history.html">Revolution Quiz</a>
+			<a href="art.html">Art Gallery</a>
 		</div>
 	</div>
 	<div class="dropdown">
@@ -36,12 +45,13 @@
 		</div>
 	</div>
 	<div class="dropdown">
-		<button class="dropbtn">Web
+		<button class="dropbtn">GUI
 			<i class="fa fa-caret-down"></i>
 		</button>
 		<div class="dropdown-content">
-			<a href="history.html">Revolution Quiz</a>
-			<a href="art.html">Art Gallery</a>
+			<a href="todolist.html">To Do List (JavaFX)</a>
+			<!-- <a href="matchinggame.html">Super Matching Game (Java)</a>
+			<a href="wguproject.html">WGU C++ Project</a> -->
 		</div>
 	</div>
 </div>
@@ -50,11 +60,11 @@
 <h1>Shopping Bill Calculator</h1>
 <h2>Java Console Output</h2>
 </header>
-</br>
 
 <h3>Planning Purchases</h3>
 
 <img class="calc" alt="Calculator" src="image/CalculatorWeb.png">
+
 
 <p>
 After buying something, do you ever regret having made the purchase? This is called buyer's remorse. Impluse spending can easily cause this. 
@@ -66,9 +76,9 @@ felt like I needed the item, then it would probably be a wise purchase.
 <h3>Writing the Code</h3>
 <p>Since many people tend to shop extravagantly, I decided it might be useful to learn how to program a shopping bill calculator. This 
 program lets the user enter as many shopping items as they wish. When the user is done entering shopping items, it calculates the total cost plus 
-10% sales tax. To do this, it uses a while loop with an if statement at the end of it. Because it is an infinite loop, the while loop ends with an if 
-statement. The if statement contains a break to get out of the loop. The only way to get out of the loop is when the user enters anything but “1” 
-when asked if he/she desires to purchase another item. </p>
+10% sales tax. To do this, it uses a while loop with an if statement a the end of it. Because it is an infinite loop, the while loop ends with an if 
+statement. The if statement contains a break to get out of the loop. The only way to get out of the loop is by entering anything but “1” when the user 
+is asked if he/she desires to purchase another item. </p>
 </br>
 
 <h3>Running the Code</h3>
@@ -77,31 +87,31 @@ when asked if he/she desires to purchase another item. </p>
 <p class="indent">
 Welcome to Shopping Bill Estimator!</br></br>
 Enter the name of the item you wish to purchase: Apples</br>
-Enter the cost of Apples in U.S. dollars: $1.99</br>
+Enter the cost of Apples in U.S. dollars: 1.99</br>
 Enter the number/amount of Apples you wish to buy: 10</br>
 Purchasing Apples will cost you $19.9.</br>
 Your estimated subtotal before taxes is: $19.9</br></br>
 Do you wish to add another product to your estimate? (Enter 1 for yes, or enter 2 for no): 1</br>
 Enter the name of the item you wish to purchase: Oranges</br>
-Enter the cost of Oranges in U.S. dollars: $.89</br>
+Enter the cost of Oranges in U.S. dollars: .89</br>
 Enter the number/amount of Oranges you wish to buy: 15</br>
 Purchasing Oranges will cost you $13.35.</br>
 Your estimated subtotal before taxes is: $33.25</br></br>
 Do you wish to add another product to your estimate? (Enter 1 for yes, or enter 2 for no): 1</br>
 Enter the name of the item you wish to purchase: Milk</br>
-Enter the cost of Milk in U.S. dollars: $3.29</br>
+Enter the cost of Milk in U.S. dollars: 3.29</br>
 Enter the number/amount of Milk you wish to buy: 2</br>
 Purchasing Milk will cost you $6.58.</br>
 Your estimated subtotal before taxes is: $39.83</br></br>
 Do you wish to add another product to your estimate? (Enter 1 for yes, or enter 2 for no): 1</br>
 Enter the name of the item you wish to purchase: Cereal</br>
-Enter the cost of Cereal in U.S. dollars: $3.49</br>
+Enter the cost of Cereal in U.S. dollars: 3.49</br>
 Enter the number/amount of Cereal you wish to buy: 4</br>
 Purchasing Cereal will cost you $13.96.</br>
 Your estimated subtotal before taxes is: $53.79</br></br>
 Do you wish to add another product to your estimate? (Enter 1 for yes, or enter 2 for no): 1</br>
 Enter the name of the item you wish to purchase: Eggs</br>
-Enter the cost of Eggs in U.S. dollars: $1.39</br>
+Enter the cost of Eggs in U.S. dollars: 1.39</br>
 Enter the number/amount of Eggs you wish to buy: 3</br>
 Purchasing Eggs will cost you $4.17.</br>
 Your estimated subtotal before taxes is: $57.96</br></br>
@@ -136,7 +146,7 @@ public class GroceryBillCost {
 	while (true) {
             System.out.print("Enter the name of the item you wish to purchase: ");
             String itemName = input.next(); // User enters the name of the item.
-            System.out.print("Enter the cost of " + itemName + " in U.S. dollars: $");
+            System.out.print("Enter the cost of " + itemName + " in U.S. dollars: ");
             double itemPrice = input.nextDouble(); // User enters the price of the item.
             System.out.print("Enter the number/amount of " + itemName + " you wish to buy: ");
             double itemAmount = input.nextDouble(); // User enteres the amount to buy.
